@@ -12,7 +12,7 @@ RUN npm run build
 
 FROM nginx:latest
 
-COPY --from=build /app/dist/fin-project /usr/share/nginx/html
+COPY --from=build /app/dist/angular-app /usr/share/nginx/html
 
 EXPOSE 80
 
